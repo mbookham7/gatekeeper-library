@@ -1,0 +1,29 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: gatekeeper-lib
+  namespace: fleet-default
+spec:
+  branch: master
+  insecureSkipTLSVerify: false
+  paths:
+  - /lib/psp/allow-privilege-escalation/samples/
+  - /lib/psp/apparmor/samples/
+  - /lib/psp/capabilities/samples/
+  - /lib/psp/flexvolume-drivers/samples/
+  - /lib/psp/forbidden-sysctls/samples/
+  - /lib/psp/fsgroup/samples/
+  - /lib/psp/host-filesystem/samples/
+  - /lib/psp/host-namespaces/samples/
+  - /lib/psp/host-network-ports/samples/
+  - /lib/psp/privileged-containers/samples/
+  - /lib/psp/proc-mount/samples/
+  - /lib/psp/read-only-root-filesystem/samples/
+  - /lib/psp/seccomp/samples/
+  - /lib/psp/selinux/samples/
+  - /lib/psp/users/samples/
+  - /lib/psp/volumes/samples/
+  repo: https://github.com/shpwrck/gatekeeper-library
+  targets:
+  - clusterSelector: {}
+type: fleet.cattle.io.gitrepo
