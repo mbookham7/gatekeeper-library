@@ -23,7 +23,7 @@ spec:
   - /lib/psp/selinux/template/
   - /lib/psp/users/template/
   - /lib/psp/volumes/template/
-  repo: https://github.com/shpwrck/gatekeeper-library
+  repo: https://github.com/mbookham7/gatekeeper-library
   targets:
   - clusterSelector: {}
 type: fleet.cattle.io.gitrepo
